@@ -44,7 +44,7 @@ setInterval( ()=> {
     
     let segundMove = seconds * 6
     let minuteMove = minuts * 6 
-    let horaMove = hours * 30 
+    let horaMove = (hours * 30) + (minuteMove / 12) 
     segund.style.transform = `rotatez(${segundMove}deg)`
     minute.style.transform = `rotatez(${minuteMove}deg)`
     hora.style.transform = `rotatez(${horaMove}deg)`

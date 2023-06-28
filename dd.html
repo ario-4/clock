@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body{
+        background-color: rgb(145, 241, 241);
+      }
       #main {
         width: 100%;
         display: grid;
@@ -23,6 +26,53 @@
       p {
         text-align: center;
       }
+      .section{
+        width: 200px;
+        height: 200px;
+        border: 3px solid;
+        margin:100px  auto;
+        border-radius: 50%;
+        position: relative;
+        background-image: url(images.png);
+        background-position: center;
+
+      }
+   
+      .segund{
+        height: 80px;
+        width: 2px;
+        background-color: red;
+        z-index: 3;
+        position: absolute;
+        left: 99px;
+        top:20px;
+        transform-origin: bottom;
+       
+
+      }
+      .minute{
+        height: 70px;
+        width: 3px;
+        background-color: rgb(11, 11, 11);
+        z-index: 4;
+        position: absolute;
+        left: 98px;
+        top:30px;
+        transform-origin: bottom;
+
+      }
+      .houre{
+        height: 50px;
+        width: 4px;
+        background-color: rgb(11, 11, 11);
+        z-index: 5;
+        position: absolute;
+        left: 98px;
+        top:50px;
+        transform-origin: bottom;
+      
+
+      }
     </style>
   </head>
   <body>
@@ -32,6 +82,13 @@
         <br />
         <span id="date"></span>
       </p>
+    </div>
+    <div class="section">
+      <div class="clock">
+           <div class="segund"></div>
+           <div class="minute"></div>
+           <div class="houre"></div>
+      </div>
     </div>
 
     <script src="j.js"></script>

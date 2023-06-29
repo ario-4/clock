@@ -18,7 +18,7 @@ setInterval( ()=> {
         m.innerHTML = 'PM'
     }
     //testif
-    if(m.innerHTML == 'pm' && hours == '00'){
+    if(m.innerHTML == 'PM' && hours == '00'){
         hours = 12
     }
 
